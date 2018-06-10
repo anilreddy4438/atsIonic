@@ -4,8 +4,8 @@ page-home {
 
 [col-6]
 {
-	padding-left:40px;
-	padding-right:40px;
+	padding-left:55px;
+	padding-right:55px;
 }
 .list-md .item-input:last-child
 {
@@ -23,7 +23,7 @@ page-home {
 }
 .item-block
 {
-	min-height:3.4rem;
+	min-height:3rem;
 }
 .select-md
 {
@@ -35,4 +35,12 @@ page-home {
 .label-md
 {
 	width:150px;
+}
+.item.item-md .checkbox-md
+{
+	margin-right:20px;
+}
+.focus-outline :focus
+{
+	outline:none;
 }
