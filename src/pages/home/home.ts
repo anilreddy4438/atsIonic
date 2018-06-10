@@ -36,6 +36,7 @@ export class HomePage {
       willingtoTravel: [ this.tab1._willingtoTravel,[Validators.required]],
       private: [ this.tab1._private,[Validators.required]],
       owners: [ this.tab1._owners,[Validators.required]],
+       source: [ this.tab1._source,[Validators.required]],
       userId: [ this.tab1._userId,[Validators.required]],
       candidateStatus: [ this.tab1._candidateStatus,[Validators.required]],
 
