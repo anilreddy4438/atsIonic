@@ -14,70 +14,70 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >FirstName</ion-label>
-              <ion-input type="text" placeholder="" formControlName="firstName"></ion-input>
+             <!--  <ion-label fixed >FirstName</ion-label>
+ -->              <ion-input type="text" placeholder="First Name"  title="First Name" formControlName="firstName" ></ion-input>
             </ion-item>
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >LastName</ion-label>
-              <ion-input type="text" placeholder="" formControlName="lastName"></ion-input>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col col-6>
-            <ion-item>
-              <ion-label floating >Middle Name</ion-label>
-              <ion-input type="text" placeholder="" formControlName="middleName"></ion-input>
-            </ion-item>
-          </ion-col>
-          <ion-col col-6>
-            <ion-item>
-              <ion-label floating >Skype Id</ion-label>
-              <ion-input type="text" placeholder="" formControlName="skypeId"></ion-input>
+             <!--  <ion-label fixed >LastName</ion-label>
+ -->              <ion-input type="text" placeholder="Last Name"  title="Last Name" formControlName="lastName"></ion-input>
             </ion-item>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Mobile Number</ion-label>
-              <ion-input type="text" placeholder="" formControlName="mobileNumber"></ion-input>
+             <!--  <ion-label fixed >Middle Name</ion-label> -->
+              <ion-input type="text" placeholder="Middle Name" title="Middle Name" formControlName="middleName"></ion-input>
             </ion-item>
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Home Number</ion-label>
-              <ion-input type="text" placeholder="" formControlName="homeNumber"></ion-input>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col col-6>
-            <ion-item>
-              <ion-label floating >Email 1</ion-label>
-              <ion-input type="text" placeholder="" formControlName="email1"></ion-input>
-            </ion-item>
-          </ion-col>
-          <ion-col col-6>
-            <ion-item>
-              <ion-label floating >Email 2</ion-label>
-              <ion-input type="text" placeholder="" formControlName="email2"></ion-input>
+             <!--  <ion-label fixed >Skype Id</ion-label> -->
+              <ion-input type="text" placeholder="Skype Id " title="Skype Id " formControlName="skypeId"></ion-input>
             </ion-item>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Job Title</ion-label>
-              <ion-input type="text" placeholder="" formControlName="jobTitle"></ion-input>
+             <!--  <ion-label fixed >Mobile Number</ion-label> -->
+              <ion-input type="text" placeholder="Mobile Numnber" title="Mobile Numnber" formControlName="mobileNumber"></ion-input>
             </ion-item>
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Job Type</ion-label>
-              <ion-select formControlName="jobType">
+             <!--  <ion-label fixed >Home Number</ion-label> -->
+              <ion-input type="text" placeholder="Home Number" title="Home Number" formControlName="homeNumber"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <ion-item>
+             <!--  <ion-label fixed >Email 1</ion-label> -->
+              <ion-input type="text" placeholder="Email 1" title="Email 1" formControlName="email1"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6>
+            <ion-item>
+             <!--  <ion-label fixed >Email 2</ion-label> -->
+              <ion-input type="text" placeholder="Email 2" title="Email 2" formControlName="email2"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <ion-item>
+             <!--  <ion-label fixed >Job Title</ion-label> -->
+              <ion-input type="text" placeholder="Job Title" title="Job Title" formControlName="jobTitle"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6>
+            <ion-item>
+              <ion-label  >Job Type</ion-label>
+              <ion-select formControlName="jobType" >
                 <ion-option value="administrator">Administrator</ion-option>
                 <ion-option value="analyst">Analyst</ion-option>
                 <ion-option value="architect">Architect</ion-option>
@@ -110,7 +110,7 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Work Authorization</ion-label>
+              <ion-label  >Work Authorization</ion-label>
               <ion-select formControlName="workAuthorization">
                 <ion-option value="usCitizen">US Citizen</ion-option>
                 <ion-option value="greenCard">Green Card</ion-option>
@@ -124,7 +124,7 @@
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Education Level</ion-label>
+              <ion-label  >Education Level</ion-label>
               <ion-select formControlName="educationLevel">
                 <ion-option value="bachelors">Bachelors</ion-option>
                 <ion-option value="masters">Masters</ion-option>
@@ -135,13 +135,13 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Rate / Salary</ion-label>
-              <ion-input type="text" placeholder="" formControlName="rateSalary"></ion-input>
+             <!--  <ion-label fixed >Rate / Salary</ion-label -->>
+              <ion-input type="text" placeholder="Rate / Salary" title="Rate / Salary" formControlName="rateSalary"></ion-input>
             </ion-item>
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Total Experience</ion-label>
+              <ion-label  >Total Experience</ion-label>
               <ion-select formControlName="totalExperience">
                 <ion-option value="03">0-3 yrs</ion-option>
                 <ion-option value="47">4-7 yrs</ion-option>
@@ -156,7 +156,7 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Employment Type</ion-label>
+              <ion-label  >Employment Type</ion-label>
               <ion-select formControlName="employmentType">
                 <ion-option value="fullTime">Full Time</ion-option>
                 <ion-option value="partTime">Part Time</ion-option>
@@ -169,8 +169,8 @@
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Relocation</ion-label>
-              <ion-input type="text" placeholder="" formControlName="relocation"></ion-input>
+             <!--  <ion-label fixed >Relocation</ion-label>
+ -->              <ion-input type="text" placeholder="Relocation" title="Relocation" formControlName="relocation"></ion-input>
             </ion-item>
           </ion-col>
         </ion-row>
@@ -178,15 +178,15 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Security Clearance</ion-label>
+              <ion-label  >Security Clearance</ion-label>
               <ion-checkbox color="dark" checked="false"></ion-checkbox>
             </ion-item>
             <ion-item>
-              <ion-label floating >Willing To Travel</ion-label>
+              <ion-label  >Willing To Travel</ion-label>
               <ion-checkbox color="dark" checked="false"></ion-checkbox>
             </ion-item>
             <ion-item>
-              <ion-label floating >Private</ion-label>
+              <ion-label  >Private</ion-label>
               <ion-checkbox color="dark" checked="false"></ion-checkbox>
             </ion-item>
           </ion-col>
@@ -202,7 +202,7 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Select Owner</ion-label>
+              <ion-label  >Select Owner</ion-label>
               <ion-select formControlName="owners">
                 <ion-option value="owner1">Owner 1</ion-option>
                 <ion-option value="owner2">Owner 2</ion-option>
@@ -211,7 +211,7 @@
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Select Source</ion-label>
+              <ion-label  >Select Source</ion-label>
               <ion-select formControlName="source">
                 <ion-option value="import">Import</ion-option>
                 <ion-option value="jobBoard">Job Board</ion-option>
@@ -224,13 +224,13 @@
         <ion-row>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >User Id</ion-label>
-              <ion-input type="text" placeholder="" formControlName="userId"></ion-input>
+             <!--  <ion-label fixed >User Id</ion-label> -->
+              <ion-input type="text" placeholder="User Id" title="User Id" formControlName="userId"></ion-input>
             </ion-item>
           </ion-col>
           <ion-col col-6>
             <ion-item>
-              <ion-label floating >Candidate Status</ion-label>
+              <ion-label  >Candidate Status</ion-label>
               <ion-select formControlName="candidateStatus">
                 <ion-option value="active">Active</ion-option>
                 <ion-option value="archeived">Archeived</ion-option>
