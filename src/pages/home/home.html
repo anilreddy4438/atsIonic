@@ -7,10 +7,17 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <input type="file" class="upload" (change)="changeListener($event.target.files)">
-  <table>
-    <tr>
-      
-    </tr>
-  </table>
+  <!--<input type="file" class="upload" (change)="changeListener($event.target.files)">-->
+  <!--<table>-->
+    <!--<tr>-->
+      <!---->
+    <!--</tr>-->
+  <!--</table>-->
+  <!--<input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">-->
+  <ion-row>
+
+    <img *ngIf="url" height="200px" width="200px" [src]="url">
+  </ion-row>
+  <input type='file' (change)="readUrl($event)">
+
 </ion-content>

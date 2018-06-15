@@ -46,48 +46,63 @@ export class HomePage {
   }
 
 
-  onFileChange(event) {
-    const reader = new FileReader();
-    console.log(event);
-    if(event.target.files && event.target.files.length) {
-      const [file] = event.target.files;
-      reader.readAsDataURL(file);
+  readUrl(event:any) {
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
 
-      reader.onload = () => {
-        this.tab1Form.patchValue({
-          file: reader.result
-       });
+      reader.onload = (event:any) => {
+        this.url = event.target.result;
+      }
 
-        // need to run CD since file load runs outside of zone
-        this.cd.markForCheck();
-      };
+      reader.readAsDataURL(event.target.files[0]);
     }
   }
 
 
 
-public changeListener(files: FileList){
+public changeListener(files: FileList) {
   console.log(files);
-  if(files && files.length > 0) {
-     let file : File = files.item(0);
-       let reader: FileReader = new FileReader();
-       reader.readAsText(file);
-       reader.onload = (e) => {
-          let csv: string = reader.result;
-          let headers = csv.split("\n");
-         let headersArr = headers[0].split(",");
-         let dataArr = headers.slice(1,-1);
-         let arr =   dataArr.map(data =>{
-           return data.split(",")
-         });
-      let objects  =  arr.map((data) =>{
-           let obj ={};
-           headersArr.map((head,index) =>{
-             obj[head] = data[index]
-           })
+  if (files && files.length > 0) {
+    let file: File = files.item(0);
+    let reader: FileReader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = (e) => {
+      let csv: string = reader.result;
+      let headers = csv.split("\n");
+      let headersArr = headers[0].split(",");
+      let dataArr = headers.slice(1, -1);
+      let arr = dataArr.map(data => {
+        return data.split(",")
+      });
+      let objects = arr.map((data) => {
+        let obj = {};
+        headersArr.map((head, index) => {
+          obj[head] = data[index]
+        })
         return obj
-         })
-       }
+      })
     }
+  }
 }
+  fileChange(event) {
+    let fileList: FileList = event.target.files;
+    if(fileList.length > 0) {
+      let file: File = fileList[0];
+      console.log(file);
+      // let formData:FormData = new FormData();
+      // formData.append('uploadFile', file, file.name);
+      // console.log(formData)
+      // let headers = new Headers();
+      // headers.append('Content-Type', 'multipart/form-data');
+      // headers.append('Accept', 'application/json');
+      // let options = new RequestOptions({ headers: headers });
+      // this.http.post(`${this.apiEndPoint}`, formData, options)
+      //   .map(res => res.json())
+      //   .catch(error => Observable.throw(error))
+      //   .subscribe(
+      //     data => console.log('success'),
+      //     error => console.log(error)
+      //   )
+    }
+  }
 }
